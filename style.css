@@ -1,0 +1,1875 @@
+/*Stilizacija bodija*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url('images/yin_yang.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: 'Bitter', serif;
+    z-index: -1;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+
+/*Stilizacija ::before bodija za lepsi estetski izgled*/
+body::before {
+    content: "";
+    background: url('images/turquoise_img.jpg');
+    background-size: contain;
+    background-position: top;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: rgba(0,212,255,0.4);
+    font-weight: bolder;
+    z-index: -1;
+}
+
+/*Stilizacija kriga oko ying yanga*/
+#circle {
+    position: absolute;
+    top: 13%;
+    left: 34%;
+    width: 570px;
+    height: 550px;
+    border-radius: 50%;  
+    box-shadow: 0px -25px 36px -5px rgba(64, 224, 208, 0.609);
+}
+
+/*Stilizacija navigacionog menija*/
+#nav-ul {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+}
+
+/*Stilizacija a tirkizne boje kad se klikne na nav hrefove*/
+ #nav-ul a.current {
+    color: turquoise;
+    transition: 0.5s ease-out;
+    border-bottom: 3px ridge turquoise;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+} 
+
+/*Stilizacija lsita*/
+#nav-ul li {
+    padding: 0 20px;
+    list-style: none;
+    line-height: 90px;
+    font-size: 22px;
+}
+
+#btn-grade-com {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    }
+
+/*Stilizacija a tagova u listama*/
+#nav-ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(0, 255, 229, 0.418);
+    font-weight: bolder;
+    transition: 0.5s ease-in;
+} 
+
+/*Stilizacija quote-a*/
+#quote {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgba(0,212,255,0.4);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*Stilizacija levog diva*/
+#left-div {
+    width: 260px; 
+    padding: 30px;
+    border: 3px ridge rgba(0,212,255,0.4);
+    color:rgba(0,212,255,0.4);
+    font-weight: normal; 
+    position: relative;
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 475px;
+    scrollbar-width: none;
+}
+
+/*Stilizacija ::before levog diva zbog slike i opacitija*/
+#left-div::before {
+    content: "";
+    background: url('images/mountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    border-radius: 20px;  
+}
+
+/*Stilizacija tex-boxa u levom divu*/
+.input {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 3px ridge rgba(0,212,255,0.4);
+    border-radius: 15px;
+    background-color: rgba(0, 215, 253, 0.198);
+    color: rgba(0,212,255,0.4);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    box-shadow: -4px -4px 10px rgba(0,212,255,0.4),
+                inset 10px 4px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-out;
+    transition-property: box-shadow;
+}
+
+/*Stilizacija margine za password input*/
+#password {
+    margin-bottom: 10px;
+}
+
+/*Stilizacija login i singup button*/
+#login-h1,
+#sing-up-h1 {
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: rgba(0, 255, 229, 0.418);
+}
+
+/*Stilizacija scoial media*/
+#social-media {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    color: rgba(0, 255, 229, 0.418);
+    align-items: center;
+    padding: 10px;
+    transition: 0.5s ease-out;
+}
+
+/*Stilizacija scoial media ikonice*/
+#social-media i {
+    transition: 0.5s ease-in;
+    border-radius: 50%;
+    border: 3px solid rgba(0,212,255,0.4);
+    padding: 10px;
+}
+
+/*Stilizacija scoial media ikonice hovere*/
+#social-media i:hover {
+    color: turquoise;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+/*Stilizacija za input hovere*/
+.input:hover,
+.input:focus,
+.input:active {
+    box-shadow: 0 0 50px 2px rgba(0, 255, 229, 0.418);
+}
+
+/*Stilizacija ikonica u text-boxu*/
+#login-ninja-icon {
+    font-size: 22px;
+    position: absolute;
+    left: 15%;
+    top: 46.6%; 
+    margin-bottom: 30px; 
+}
+
+/*Stilizacija za login lock icon*/
+#login-lock-icon {
+    font-size: 22px;
+    position: absolute;
+    left: 14%;
+    top: 60%;
+    margin-bottom: 30px;
+}
+
+/*Stilizacija za ninja icon*/
+#singup-ninja-icon {
+    font-size: 22px;
+    position: absolute;
+    left: 13%;
+    bottom: 65.8%;
+}
+
+/*Stilizacija za email icon*/
+#singup-email-icon {
+    font-size: 22px;
+    position: absolute;
+    left: 13%;
+    bottom: 53.7%;
+}
+
+/*Stilizacija za singin lock icon 1*/
+#singin-lock-icon-1 {
+    font-size: 22px;
+    position: absolute;
+    left: 13%;
+    bottom: 41.7%;
+}
+
+/*Stilizacija za singin lock icon 2*/
+#singin-lock-icon-2 {
+    font-size: 22px;
+    position: absolute;
+    left: 13%;
+    bottom: 29.7%;
+}
+
+/*Stilizacija za icon slash 1*/
+#eye-icon-slash-1 {
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    bottom: 42%;
+    font-size: 20px;
+}
+
+/*Stilizacija za icon slash 2*/
+#eye-icon-slash-2 {
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    font-size: 20px;
+}
+
+/*Stilizacija za h4*/
+h4 {
+    font-weight: bold;
+    color: rgba(0, 255, 229, 0.418);;
+}
+
+/*stilizuje boju za a hrefove*/
+#left-div a {
+    color: rgba(0, 255, 229, 0.418);
+}
+
+/*Stilizuhe buttone*/
+#delrobu-btn,
+#addtocart-btn,
+#send-btn,
+#singup-btn,
+#btn-login {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    color: rgba(0, 255, 229, 0.418);
+    background: rgba(3, 255, 230, 0.226);
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transition-property: border-left, border-right, box-shadow;
+}
+
+/*Stilizuhe hover za buttone*/
+#delrobu-btn:hover,
+#addtocart-btn:hover,
+#send-btn:hover,
+#singup-btn:hover,
+#btn-login:hover {
+    box-shadow: 0 0 50px 2px rgba(0, 213, 255, 0.589);
+    border: 1px solid turquoise;
+    color: turquoise;
+}
+
+/*Stilizacija primary dugmeta*/
+.btn-login { 
+    display: inline-block;
+    margin: 0 8px;
+    width: 45%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: bolder; 
+    background-color:transparent;
+    color: rgba(0, 255, 229, 0.418);
+    border-radius: 10px;
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/*Stilizacija primary dugmeta kad se hoveruje*/
+.btn-login:hover {
+    color: turquoise;
+} 
+
+/*Klasa za menjanje boja*/
+.turquoise {
+    color: turquoise;
+}
+
+/*Stilizacija main diva*/
+#main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 80px;
+}
+
+#right-div p:last-child,
+#left-div p:last-child {
+    border-bottom: 3px solid rgba(0,212,255,0.4);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+/*Stilizacija desnog diva*/
+#right-div {
+    border: 3px ridge rgba(0,212,255,0.4);
+    padding: 15px;
+    color: rgba(0,212,255,0.4);
+    border-radius: 5px;
+    width: 470px;
+    margin-top: 40px;
+    font-weight: normal;
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    border-radius: 20px;  
+    scrollbar-width: none;
+}
+
+/*Ubacuje text shadow za svaki p na stranici da se lepse vidi i cita*/
+#right-div p {
+    text-shadow: rgba(0,212,255,0.4) 0px 0px 10px;
+} 
+
+/*Ubacuje text shadow za svaki p na stranici da se lepse vidi i cita*/
+#left-div p {
+    text-shadow: rgba(0,212,255,0.4) 0px 0px 10px;
+} 
+
+/*Stilizacija ::before desnog diva*/
+#right-div::before {
+    content: "";
+    background: url('images/mountain.jpg');
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: rgba(0,212,255,0.4);
+    font-weight: bolder;
+    border-radius: 20px;  
+    z-index: -1;
+}
+
+/*Stilizacija slika i iframova*/
+#right-div > img,
+#right-div > iframe {
+    width: 466px;
+    height: 280px;
+}
+
+/*Stilizacija footera*/
+#foot {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/*Stilizacija desnog footera*/
+#right-foot {
+    color: rgba(0, 255, 229, 0.418);
+    font-size: 26px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+/*Stilizacija ikonica u desnom footeru*/
+#right-foot a {
+    transition: 0.5s ease-in;
+    color: rgba(0, 255, 229, 0.418);
+    font-weight: bolder;;
+}
+
+/*Stilizacija a:hovera u desnom footeru*/
+#right-foot a:hover {
+    color: turquoise;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+/*Stilizacija ikonica desnog footera*/
+#right-foot i {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 3px ridge rgba(0,212,255,0.4);
+    padding: 10px;
+}
+
+/*Stilizacija ikonica desnog hover footera*/
+#right-foot i:hover {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 3px ridge rgba(0,212,255,0.4);
+    padding: 10px;
+}
+
+/*Stilizacija centralnog footera*/
+#center-foot {
+    position: absolute;
+    left: 35%;
+    bottom: 0%;
+    color: rgba(0,212,255,0.4);
+    font-size: 20px;
+}
+
+/*Stilizacija levog footera*/
+#left-foot {
+    color: rgba(0,212,255,0.4);
+    font-size: 20px;
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    margin-left: 90px;
+}
+
+/*Stilizacija text-area u komentar divu*/
+#unos-opis {
+    background: rgba(0, 0, 0, 0.3); 
+    background-color: transparent;
+    font-size: 18px;
+    position: relative; 
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: rgba(0, 255, 229, 0.418);
+    border-radius: 15px;
+    font-weight: bolder;
+    border-left: 3px ridge rgba(0,212,255,0.4); 
+    border-bottom: 3px ridge rgba(0,212,255,0.4); 
+    height: 120px;
+}
+
+/*Stilizuje palceholder za komentare*/
+#unos-opis::placeholder {
+    font-size: 20px;
+    text-align: center;
+    background-color: none;
+}
+
+/*Stilizacija komentar diva u komentar wrapperu*/
+#komentar-div {
+    position: absolute;
+    color: rgba(0,212,255,0.4);
+    background-color: transparent;
+    position: relative; 
+    top: 10%;
+    left: 0%;
+    border-top: 3px solid rgba(0,212,255,0.4);
+    border-radius: 15px;
+    padding-top: 30px;
+}
+
+/*Stilizacija komentar diva da izgleda kao bubble*/
+.bubble {
+    color: rgba(0,212,255,0.4);
+    border: 3px ridge rgba(0,212,255,0.4);
+    position: relative;
+    top: 10%;
+    left: 3%;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 350px;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.bubble .trash {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: -6.6%;
+    font-size: 18px;
+    color: rgba(0, 255, 229, 0.418);
+}
+
+.bubble h4 {
+    margin: 0;
+    font-size: 18px;
+    padding: 3px 0;
+}
+
+.bubble p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.bubble span {
+    color: rgba(0, 255, 229, 0.418);
+    margin-left: 200px;
+}
+
+.bubble .grade {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+ 
+/* .bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 8px ridge transparent;
+    border-bottom: 8px ridge transparent;
+    border-right: 13px solid rgba(0,212,255,0.4);
+    opacity: 0.9;
+} */
+
+/*Stilizacija komentar wrappera*/
+.komentar-wrapper {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    position: relative; 
+    width: 400px;
+    height: 590px;
+    border: 3px ridge rgba(0,212,255,0.4);
+    font-weight: bolder;
+    padding: 35px;
+    margin-top: 50px;
+    border-radius: 20px; 
+}
+
+/*Stilizacija ::before komentar wrappera*/
+.komentar-wrapper::before { 
+    content: "";
+    background: url('images/mountain.jpg');
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 20px; 
+}
+
+/*Stilizacija za add komentar dugme*/
+#btn-add-com {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 100px;
+    background-color:transparent;
+    color: rgba(0, 255, 229, 0.418);
+    border-radius: 10px;
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/*Stilizacija za cancle komentar dugme*/
+#btn-cancle-com {
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    width: 100px;
+    background-color:transparent;
+    color: rgba(0, 255, 229, 0.418);
+    border-radius: 10px;
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/*Daje hover buttonima*/
+#btn-add-com:hover,
+#btn-cancle-com:hover {
+    color: turquoise;
+}
+
+/*Stilizacija za video div-a*/
+#new-videos {
+    width: 326px;
+    height: 662px;
+    border: 3px ridge rgba(0,212,255,0.4);
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    margin-top: 60px;
+}
+
+/*Stilizacija ikonice za uklanjanje video klipova*/
+#right-div .videoDiv i {
+    position: absolute;
+    top: 50%;
+    right: -5.5%;
+    color: rgba(0,212,255,0.4);
+    cursor: pointer;
+}
+
+/*Stilizacija za div koji adduje youtube klipove*/
+#addVideo-div {
+    position: absolute;
+    top: 15%;
+    right: -4%;
+    width: 280px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+/*Stilizacija za div koji adduje youtube klipove, gadja 2 dugme*/
+#addVideo-div > p:nth-child(2) {
+    position: absolute; 
+    top: 35%;
+    right: 5%;
+}
+
+/*Stilizacija div-a unutar video diva */
+.videoDiv {
+    position: relative;
+    margin: 5px 5px 0;
+}
+
+/*Stilizacija inputa za dodavanje youtube klipova*/
+#addVideos,
+#video-title {
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px ridge rgba(0,212,255,0.4);
+    outline: none;
+    font-size: 18px;
+    color: rgba(0,212,255,0.4);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*Stilizuje padding li-ja*/
+#martial-arts-ul li {
+    padding: 10px;
+}
+/*Stilizuje hover li-ja*/
+#martial-arts-ul li:hover {
+    cursor: pointer;
+    color: turquoise;
+}
+
+/*Stilizacija za sve a linkove*/
+a {
+    color: rgba(0,212,255,0.4);
+    text-decoration: none;
+}
+
+
+/*Stilizacija za uklanjanje scroll bara*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Stilizacija za sve placeholdere*/
+::placeholder {
+    color: rgba(0,212,255,0.4);
+    /* opacity: 0.7; */
+    font-size: 16px;
+    margin-left: 5px;
+} 
+
+/*Stilizacija za sve textarea polja*/
+textarea {
+    resize: none;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/*Stilizacija placeholdera za textarea*/
+textarea::placeholder {
+    color: rgba(0,212,255,0.4);
+    opacity: 0.7;
+}
+
+/*Stilizuje blog content */
+.blog-content {
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/*Stilizuje blog content h2*/
+.blog-content h2 {
+    margin: 10px 0;
+    color: rgba(0, 255, 229, 0.418);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/*Stilizuje h2 boju*/
+h2 {
+    color: rgba(0, 255, 229, 0.418); 
+}
+
+/*Stilizuje read more button u blogu*/
+.read-more-btn {
+    font-size: 18px;
+    color: rgba(0, 255, 229, 0.418);
+    padding-top: 10px;
+    transition: 0.5s ease-out;
+}
+
+/*Stilizuje read more button u blogu preko hovera*/
+.read-more-btn:hover {
+    font-size: 18px;
+    /* color: turquoise; */
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s ease-in;
+}
+
+/*Stilizacija za warning textove*/
+#warning {
+    color: rgba(0,212,255,0.4);
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 1.3em;
+    transform: translate(-50%, -50%);
+}
+
+/*Stilizuje dodaj robu da sirina bude 300px*/
+#dodaj-robu {
+    width: 300px;
+}
+
+/*Stilizuje image icon*/
+#image-icon {
+    font-size: 22px;
+    transform: translateY(-390px);
+    margin-left: 18px;
+}
+
+/*Stilizuje name icon*/
+#name-icon {
+    font-size: 22px;
+    transform: translateY(-317px);
+    margin-left: -25px;
+}
+
+/*Stilizuje dollar icon*/
+#dollar-icon {
+    font-size: 22px;
+    transform: translateY(-245px);
+    margin-left: -20px;
+}
+
+/*Stilizuje del icon*/
+#del-icon {
+    font-size: 22px;
+    transform: translateY(-103px);
+    margin-left: -18px;
+}
+
+/*Stilizuje roba div*/
+#roba {
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    margin: 10px auto;
+    border-radius: 15px;  
+    padding: 10px;
+    height: 410px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+/*Stilizuje trenutnu robu i pomera padding*/
+.trenutna-roba {
+    padding-left: 10px;
+}
+
+/*Stilizuje porudzbenice div*/
+#porudzbenice {
+    border-top: 3px ridge rgba(0,212,255,0.4);
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;  
+    padding: 20px;
+    overflow: scroll;
+    height: 390px;
+    font-size: 20px;
+    font-weight: bolder;
+    scrollbar-width: none;
+}
+
+/*Stilizuje od robe njegov svaki poseban td*/
+#roba td {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+/*Stilizuje poseban td element*/
+ #roba td:nth-child(3){
+    width: 80px;
+}
+
+/*Stilizuje poseban td element*/
+#roba td:nth-child(7){
+    width: 140px;
+}
+
+/*Stilizuje slike da bude sve iste velicine i visine*/
+.slika-roba {
+    cursor: zoom-in;
+    width: 70px;
+    height: 50px;
+}
+
+/*Stilizuje slike da bude sve iste velicine i visine*/
+.slika-porucena-roba {
+    width: 70px;
+    height: 50px;
+}
+
+/*Stilizuje povecavanje i smanjivanje slike*/
+.resize {
+    position: absolute;
+    top: -2%;
+    left: -5%;
+    width: 600px;
+    height: 730px;
+    border: 3px ridge rgba(0,212,255,0.4);
+    z-index: 100;
+    cursor: zoom-out;
+}
+
+/*Stilizuje ikonicu*/
+.poruci-btn i {
+    font-size: 24px;
+    cursor: pointer;
+    color: rgba(0, 255, 229, 0.418);
+}
+
+/*Stilizuje button*/
+#admin-panel-btn,
+#go-back-btn2 {
+    width: 150px;
+    color: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+    position: absolute;
+    top: 11%;
+    right: 13%;
+}
+
+/*Stilizuje button*/
+#admin-panel-btn:hover,
+#go-back-btn2:hover  {
+    color: turquoise;
+}
+
+/*Stilizuje porucenu robu div*/
+.porucena-roba {
+    text-align: center;
+    border-left: 3px ridge rgba(0, 255, 229, 0.418);
+    border-right: 3px ridge rgba(0, 255, 229, 0.418);
+    padding: 10px;
+    width: 450px;
+    border-radius: 20px;
+    font-size: 18px;
+    transform: translateX(-20px);
+    margin-bottom: 20px;
+}
+
+/*Stilizuje td u robi koja je na lageru i ispod za svaki element*/
+#porudzbenice td {
+    width: 80px;
+    text-align: center;
+    padding: 3px;
+}
+
+#porudzbenice tr td:nth-child(2) {
+    width: 240px;
+}
+
+#roba tr td:nth-child(2) {
+    width: 150px ;
+}
+
+#porudzbenice tr td:nth-child(2) {
+    width: 150px ;
+}
+
+#porudzbenice tr td:nth-child(3) {
+    width: 150px ;
+}
+
+#porudzbenice tr td:nth-child(4) {
+    width: 150px ;
+}
+
+#porudzbenice tr td:nth-child(5) {
+    width: 150px ;
+}
+
+/*Stilizuje porucenu robu delete btn*/
+.porucena-roba-del-btn {
+    color: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Stilizuje slider div za filtriranje*/
+#slider-div {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Stilizuje slider 2 dete za filtriranje*/
+#slider-div h4:nth-child(2) {
+    font-size: 16px;
+    width: 160px;
+    margin-left: 20px;
+}
+
+/*Stilizuje slider last child za filtriranje*/
+#slider-div h4:last-child {
+    transform: translateY(-10px);
+}
+
+/*Stilizuje slider za filtriranje*/
+#slider {
+    margin-bottom: 0;
+    margin-left: 50px;
+    -webkit-appearance: none;
+    width: 40%;
+    height: 20px;
+    background: transparent;
+    border: 3px ridge rgba(0,212,255,0.4);
+    outline: none;
+    border-radius: 20px;
+    transform: translateY(-5px);
+}
+
+/*Stilizuje slider za filtriranje*/
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+}
+
+/*Stilizuje slider za filtriranje*/
+#slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background:rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+} 
+
+/*Stilizuje button div*/
+#btns-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*Stilizuje cart info*/
+#cart-info {
+    border: 3px ridge rgba(0,212,255,0.4);
+    padding: 9px;
+    border-radius: 15px;
+    width: 38%;
+    text-align: center;
+    color: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: 0.5s ease-out;
+    transition-property: box-shadow;
+    font-weight: bolder;
+    font-size: 16px;
+    box-shadow: -4px -4px 10px rgba(0,212,255,0.4),
+    inset 10px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/*Stilizuje cart info ikonicu*/
+#cart-info i  {
+    transform: translateX(-10px);
+}
+
+/*Stilizuje cart hover u drugu boju*/
+#cart-info:hover {
+    border: 3px ridge turquoise;
+    color: turquoise;
+}
+
+/*Stilizuje search input*/
+#search-input {
+    width: 50%; 
+    transform: translateX(-12px);
+    text-align: center;
+    color: rgba(0, 255, 229, 0.418);
+    margin-bottom: 0;
+    margin: 10px 0;
+    background-color: transparent;
+} 
+
+/*Stilizuje flex div*/
+#flex-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+/*Stilizuje flex div 2*/
+#flex-div2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-4px);
+}
+
+/*Stilizuje flex div 2 span*/
+#flex-div2 span {
+    width: 120px;
+}
+
+/*Prikazuje sumu svih kupljenih itema*/
+#total-price-h4 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*Prikazuje text kad nema itema u cartu*/
+#no-item-msg {
+    text-align: center;
+    position: absolute;
+    top: 52%;
+    left: 12%;
+    font-size: 28px;
+    font-weight: bolder;
+    color: rgba(0,212,255,0.4);
+}
+
+/*Stilizuje everything div*/
+#everything-div {
+    padding: 1em;
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    color: turquoise;
+}
+
+/*Stilizuje summary kategorija*/
+#accessories-div,
+summary {
+    padding: 1em;
+    border-bottom: 3px ridge rgba(0,212,255,0.4);
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    color: rgba(0, 255, 229, 0.418);
+}
+
+/*Stilizuje listu kategorija*/
+details p {
+    color: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    width: 160px;
+    display: inline-block;
+}
+
+/*Stilizuje listu kad se hoveruje*/
+details p:hover {
+    color: turquoise;
+    transition: 0.5s ease-out;
+}
+
+/*Stilizuje listu spana koliko ima itema u svakoj kategoriji*/
+details span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Stilizuje div kategorija*/
+#cart-div {
+    position: absolute;
+    right: 69%;
+    top: 19%;
+    border: 3px ridge rgba(0,212,255,0.4);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 60px 4px turquoise;
+    box-shadow: 10px 5px 60px 4px rgba(64, 224, 208, 0.609);
+    display: none;
+}
+
+/*Stilizacija ::before cart diva zbog slike i opacitija*/
+#cart-div::before {
+    content: "";
+    background: url('images/mountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    border-radius: 20px;  
+}
+
+/*Skriva left div da bi prikazao kupljenu robu div*/
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+/*Stavlja display block kad se predje na drugi page*/
+.show-cart {
+    display: block !important;
+}
+
+/*Stilizuje border da bi se znalo kad je kliknuto na cart info*/
+.glow {
+    color: turquoise !important;
+    border: 3px ridge turquoise !important;
+}
+
+/*Stilizacija za sve manje racunare*/
+@media screen and (min-width: 1201px) and (max-width: 1648px) {
+    body {
+        background-image: url('images/crop_yin_yang.jpg');
+        background-size: cover; 
+        position: relative;
+        overflow: scroll;
+
+    }
+
+    body::before {
+        content: "";
+        background: url('images/mountain.jpg');
+        background-size: contain;
+        background-position: top;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;   
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    #nav-ul {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+        width: 100%;
+        height: 300px; 
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+        padding-top: 100px;
+    }
+
+    #btn-grade-com {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    }
+
+    #quote {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 10%; 
+        /* margin: 0 auto; */
+        font-size: 26px;
+        text-align: center;
+        width: 80%;
+    }
+
+    #nav-ul::before {
+        content: "";
+        background: url('images/mountain.jpg');
+        background-size: cover;
+        background-position: top top;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+
+    #nav-ul li {
+        padding: 0;
+        list-style: none;
+    }
+    
+    #nav-ul li a {
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 28px;
+        color: rgba(0, 255, 229, 0.418);
+        font-weight: bolder;
+        transition: 0.5s ease-in;
+    } 
+
+    #main-div {
+        display: flex;
+        justify-content: space-between;
+        margin: 130px 0;
+    }
+    
+    #left-div {
+        width: 250px;
+        padding: 30px;
+    }
+
+    #left-div p {
+        font-size: 16px;
+    }
+    
+    #right-div {
+        width: 400px;
+        margin: 0;
+        margin-right: 40px;
+    }
+
+    #right-div > img,
+    #right-div > iframe {
+    width: 465px;
+    margin-left: 0;
+    }
+
+    #foot {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        height: 150px;
+        padding: 0 60px;
+    }  
+    
+    #right-foot {
+        position: static;
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #center-foot {
+        position: static;
+        padding-bottom: 0px;
+    }
+    
+    #left-foot {
+        position: static;
+        padding: 0;
+        margin:  0;
+    } 
+
+    #btn-add-com {
+        position: absolute;
+        top: 25%;
+        left: 8%;
+        width: 100px;
+    }
+    
+    #btn-cancle-com {
+        position: absolute;
+        top: 25%;
+        right: 12%;
+        width: 100px;
+    }
+    
+    textarea {
+        width: 300px;
+    }
+
+    #new-videos {
+        width: 326px;
+        height: 662px;
+        margin-right: 35px;
+    }
+    
+    #addVideo-div {
+        position: absolute;
+        top: 32%;
+        right: -9%;
+        width: 280px;
+    }
+
+    #addVideo-div > button:nth-child(2) {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    } 
+
+    #warning {
+        position: absolute;
+        top: 35%;
+        right: 55%;
+        font-size: 18px;
+    }
+
+    #admin-panel-btn,
+    #go-back-btn2 {
+    width: 150px;
+    color: rgba(0, 255, 229, 0.418);
+    cursor: pointer;
+    position: absolute;
+    top: 29%;
+    right: 16%;
+    }
+
+    #admin-panel-btn:hover,
+    #go-back-btn2:hover  {
+        color: turquoise;
+    }
+
+    #cart-div {
+        position: absolute;
+        right: 65%;
+        top: 35%;
+    }
+}
+
+/*Stilizacija za sve tablete*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {     
+        position: relative;
+        background: url('images/crop_yin_yang.jpg');
+        background-size: cover;
+        overflow: scroll;
+    }
+
+    body::before {
+        content: "";
+        background: url('images/turquoise_img.jpg');
+        background-size: contain;
+        background-position: top;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+    
+    #circle {
+        display: none;
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        height: 500px; 
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    #nav-ul::before {
+        content: "";
+        background: url('images/mountain.jpg');
+        background-size: cover;
+        background-position: top;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;   
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+
+    #nav-ul li {
+        list-style: none;
+        line-height: 60px;
+        border-bottom: 3px ridge rgba(0,212,255,0.4);
+    }
+
+    #nav-ul li a {
+        font-size: 24px;
+        border-bottom: none;
+        border-left: none;;
+        font-weight: bolder;
+        border-bottom: none;
+        border-left: none;
+        transition: 0.5s ease-in-out;
+        border-radius: 25px; 
+    }
+
+    #h1 {
+        font-size: 32px;
+    }
+
+    #quote {
+        display: block;
+        position: relative;
+        top: 0%;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #left-div {
+        min-width: 250px;
+        max-width: 100%;
+        padding: 30px;
+        margin-bottom: 120px;
+        margin-left: 0px;
+    }
+
+    #left-div > p {
+        font-size: 16px;
+    }
+
+    #right-div > p {
+        font-size: 16px;
+    }
+
+    #main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 1600px;
+    }
+
+    #right-div {
+        min-width: 300px;
+        max-width: 100%;
+        margin-right: 0;
+        overflow: scroll;
+        margin-top: 60px;
+    }
+
+    #right-div > img,
+    #right-div > iframe {
+    width: 100%;
+    }
+
+    #foot {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        height: 150px;
+    }
+
+    #right-foot {
+        position: static;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    #right-foot i {
+        margin-bottom: 15px;
+    }
+              
+    #center-foot {
+        position: static;
+        margin-left: 50px;
+    }
+
+    #left-foot {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+
+    #unos-opis {
+        max-width: 85%;
+    }
+
+    #btn-add-com {
+        position: absolute;
+        top: 25%;
+    }
+
+    #btn-cancle-com {
+        position: absolute;
+        top: 25%;
+        right: 11%;
+    } 
+
+    textarea {
+        width: 310px;
+    }
+
+    #new-videos {
+        width: 326px;
+        height: 662px;
+    }
+    
+    #addVideo-div {
+        position: absolute;
+        top: 55%;
+        left: 53%;
+        width: 280px;
+    }
+
+    #warning {
+        top: 23%;
+        left: 50%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #fyp {
+        font-size: 14px;
+    }
+
+    #right-div {
+        margin-top: 150px;
+    }
+
+    #go-back-btn2,
+    #admin-panel-btn {
+        width: 150px;
+        color: rgba(0, 255, 229, 0.418);
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+        right: 40%;
+    }
+
+    #cart-div {
+        position: absolute;
+        right: 23%;
+        top: 25%;
+    }
+}
+
+/*Stilizacija za sve telefone*/
+@media screen and (max-width: 767px) {
+    body {     
+        position: relative;
+        background: url('images/crop_yin_yang.jpg');
+        background-size: cover;
+        overflow: scroll;
+    }
+
+    body::before {
+        content: "";
+        background: url('images/turquoise_img.jpg');
+        background-size: contain;
+        background-position: top;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+    
+    #circle {
+        display: none;
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+        height: 550px; 
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+        margin-bottom: 100px;
+    }
+
+    #nav-ul::before {
+        content: "";
+        background: url('images/mountain.jpg');
+        background-size: cover;
+        background-position: top;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;   
+        color: rgba(0,212,255,0.4);
+        font-weight: bolder;
+    }
+
+    #nav-ul li {
+        list-style: none;
+        line-height: 60px;
+        border-bottom: 3px ridge rgba(0,212,255,0.4);;
+    }
+
+    #nav-ul li a { 
+        text-decoration: none;
+        font-size: 22px;
+        color: rgba(0, 255, 229, 0.418);
+        font-weight: bolder;
+        border-bottom: none;
+        border-left: none;
+        transition: 0.5s ease-in-out;
+        border-radius: 25px;
+    } 
+    
+    #quote {
+        display: block;
+        position: relative;
+        left: -4%;
+        top: 0%;
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #left-div {
+        min-width: 250px;
+        max-width: 100%;
+        padding: 30px;
+        margin-bottom: 150px;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+
+    #left-div > p {
+        font-size: 15px;
+    }
+
+    #main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #right-div {
+        min-width: 300px;
+        max-width: 100%;
+        margin-right: 0;
+        margin-top: 130px;
+    }
+
+    #left-div p {
+        font-size: 16px;
+    }
+
+    #right-div > img,
+    #right-div > iframe {
+        width: 100%;
+    }      
+
+    #foot {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:space-evenly;
+        height: 250px; 
+    } 
+
+    #right-foot {
+        transform: translate(-50%, -50);
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+
+    #center-foot {
+        position: static;
+    }
+
+    #left-foot {
+        transform: translate(-50%, -50);
+        position: static;
+        margin:  0;
+    } 
+
+    #unos-opis {
+        max-width: 85%;
+        margin-bottom: 10px;
+    }
+
+    #komentar-div {
+        width: 100%;
+    }
+
+    #btn-add-com {
+        margin-top: 8px;
+    }
+
+    #btn-cancle-com {
+        margin-top: 8px;
+    } 
+
+    #new-videos {
+        width: 326px;
+        height: 662px;
+    }
+
+    #addVideo-div {
+        position: absolute;
+        top: 56%;
+        left: 55%;
+        width: 280px;
+    }
+
+    #warning {
+        top: 26%;
+        left: 50%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #slider {
+        margin: 0;
+    }
+
+    #go-back-btn2,
+    #admin-panel-btn {
+        width: 150px;
+        color: rgba(0, 255, 229, 0.418);
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+        right: 35%;
+    }
+
+    #cart-div {
+        position: absolute;
+        right: 4%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

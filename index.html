@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jutsu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body onload="gsapRotate()">
+    <div id="nav">
+        <ul id="nav-ul">
+            <div id="quote" style="transform: translate(0px,0px);">
+                "I fear not the man who has practiced 10,000 kicks once,<br>
+                but I fear the man who had practiced one kick 10,000 times."
+            </div>
+            <li><a class="current" onclick="prikaziHome()"><i class="fas fa-house-user"></i>&nbsp;Home</a></li>
+            <li><a onclick="prikaziAboutUs()"><i class="fas fa-users"></i>&nbsp;About us</a></li>
+            <li><a onclick="prikaziShaolin()">Shaolin Wushu</a></li>
+            <li><a onclick="prikaziKarate()">Goju-ryu Karate</a></li>
+            <li><a onclick="prikaziJeetKuneDo()">Jeet Kune Do</a></li>
+            <li><a onclick="prikaziAikido()">Aikido</a></li>
+        </ul> <!-- end of #nav-ul   -->
+    </div> <!-- end of #nav-->
+    <div id="main-div">
+        <div id="left-div">
+            <h1 id="login-h1">- LOGIN -</h1>
+            <p style="text-align: center;">Hey, you can also continiue with:</p>
+            <div id="social-media">
+                <i title="facebook" class="fab fa-facebook-square"></i>
+                <i title="google" class="fab fa-google"></i>
+                <i title="email" class="fas fa-envelope"></i>
+            </div>
+            <div class="text-box">
+                <input class="input" id="user" type="text" placeholder="Username">
+                <i id="login-ninja-icon" class="fas fa-user-ninja"></i>
+            </div> <!-- end of .text-box-->
+            <div class="text-box">
+                <i id="login-lock-icon" class="fas fa-lock"></i>
+                <input class="input" id="password" type="password" placeholder="Password">
+            </div> <!-- end of .text-box-->
+            <p style="text-align: center;" href="#">Forgot your password? <a href="#"> Click here!</a></p>
+            <button id="btn-login" onclick="login()">LOGIN</button>
+            <p>Not registered? <a onclick="singup()" href="#">Create an account</a></p>
+        </div> <!-- end of #left-div-->
+        <div id="right-div">
+            <h1 id="login-h1">Introduction to Jutsu</h1>
+            <p>- Qi (or chi) is often translated as life energy, referring to energy circulating through the body;
+                though a
+                more general definition is universal energy, including heat, light, and electromagnetic energy and
+                definitions often involve breath, air, gas, or the relationship between matter, energy, and spirit.</p>
+            <p>- Qigong comprises a diverse set of practices that coordinate body (調身), breath (調息), and mind (調心) based
+                on Chinese philosophy.[27][28] Practices include moving and still meditation, massage, chanting, sound
+                meditation, and non-contact treatments, performed in a broad array of body postures.</p>
+            <p>- Qigong is commonly classified into two foundational categories: 1. dynamic or active qigong (dong
+                gong),
+                with slow flowing movement; and 2. meditative or passive qigong (jing gong), with still positions and
+                inner movement of the breath. From a therapeutic perspective, qigong can be classified into two systems:
+                1. internal qigong, which focuses on self-care and self-cultivation, and; 2. external qigong, which
+                involves treatment by a therapist who directs or transmits qi.</p>
+            <p>- Martial Arts forms are actually the most rudimentary part of this process. The highest level of ability
+                is
+                achieved when your body is in harmony and your mind can control your Qi. If either component is lacking,
+                you
+                can learn 10,000 forms, and still perform mediocre Kung Fu.</p>
+        </div> <!-- end of #right-div-->
+    </div> <!-- end of #main-div-->
+    <div id="foot">
+        <div id="left-foot">
+            <p><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Contact us : 0612199621</p>
+            <p><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email us : jutsu@gmail.com</p>
+        </div> <!-- end of #left-foot-->
+        <div id="center-foot">
+            <p>© 2020 All Rights Reserved. Jutsu Enterprises, LLC</p>
+        </div>
+        <div id="right-foot">
+            <a title="google map" href="#"><i class="fas fa-map-marker-alt"></i></a>
+            <a title="facebook" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a title="instagran" href="#"><i class="fab fa-instagram"></i></a>
+            <a title="twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a title="youtube" href="#"><i class="fab fa-youtube"></i></a>
+            <a title="discord" href="#"><i class="fab fa-discord"></i></a>
+        </div> <!-- end of #right-foot-->
+    </div> <!-- end of #foot-->
+    <div id="warning"></div>
+    <div id="circle"></div>
+
+    <script src="js/login-pages.js"></script>
+    <script src="js/logout-pages.js"></script>
+    <script src="js/shop.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</body>
+
+</html>
